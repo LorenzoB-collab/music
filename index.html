@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,9 +18,9 @@
 
     <header>
         <div class="header-box"></div>
-        <div class="container-fluid">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg back-header">
+        <div class="container-fluid container-header">
+            <nav class="navbar navbar-expand-lg back-header">
+                <div class="container">
                     <!-- logo -->
                     <a class="navbar-brand" href="#"><img src="img/logo.png" alt="MUSICBEAT"></a>
                     <!-- boton reponsive -->
@@ -50,35 +51,314 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
+            </nav>
+            <div class="container">
+
             </div>
             <div class="hero">
                 <div class="row">
                     <div class="col-4 ">
                         <div class="text1">
                             <h3>CHARLES <br>
-                                JEMMINGTON//</h3>
+                                JEMMINGTON //</h3>
                             <h2>
-                                PLAY THE <br>
-                                MOMENTS
+                                <span id="playthe">PLAY THE</span> <br>
+                                <span id="moments">MOMENTS</span>
                             </h2>
                             <button> <img src="img/shoping-car.png" alt=""> GET NEW ALBUM</button>
                         </div>
-                        
+
                     </div>
-                    
-                    <div class="col-8">
+
+                    <div class="col-8 imgArtist">
                         <img src="img/hero.png" alt="artist">
                     </div>
                 </div>
             </div>
-
         </div>
-        </div>
-        </div>
-
-
     </header>
+
+    <main>
+
+        <!-- Recent Releases -->
+        <div class="container-fluid container-releases">
+            <div class="container">
+                <div class="recenteReleases text-center">
+                    <h2>RECENT <span id="releases">RELEASES</span></h2>
+                </div>
+                <div class="row  img-store text-center">
+                    <div class="col-4">
+                        <img src="img/album-1.png" alt="album-1">
+                        <p>DATE: 2020/02/22</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/album-2.png" alt="album-1">
+                        <p>DATE: 2020/02/22</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/album-3.png" alt="album-1">
+                        <p>DATE: 2020/02/22</p>
+                    </div>
+                </div>
+                <button> SEE ALL </button>
+            </div>
+        </div>
+
+        <!-- tour schedule -->
+        <div class="container-fluid container-schedule">
+            <div class="container">
+                <div class="tourSchedule text-center">
+                    <h2>TOUR <span id="releases">SCHEDULE</span></h2>
+                </div>
+
+                <div class="row  card-schedule justify-content-around text-center">
+                    <div class="col-3">
+                        <div class="march-25">
+                            <h2>25 <br></h2>
+                            <h3>MARCH - 2020</h3>
+                            <p>Saint Paul, MN <br> Talking Energy Center</p>
+                            <button> BUY TICKETS</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="march-25">
+                            <h2>27 <br></h2>
+                            <h3>MARCH - 2020</h3>
+                            <p>Saint Paul, MN <br> Talking Energy Center</p>
+                            <button> BUY TICKETS</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="march-25">
+                            <h2>28 <br></h2>
+                            <h3>MARCH - 2020</h3>
+                            <p>Saint Paul, MN <br> Talking Energy Center</p>
+                            <button> BUY TICKETS</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="march-25">
+                            <h2>30 <br></h2>
+                            <h3>MARCH - 2020</h3>
+                            <p>Saint Paul, MN <br> Talking Energy Center</p>
+                            <button> BUY TICKETS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our gallery -->
+        <div class="container-fluid container-gallery">
+            <div class="container">
+                <div class="ourGallery">
+                    <h2>OUR <span id="releases">GALLERY</span></h2>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel slide carousel-gallery " data-ride="carousel">
+                    <div class="carousel-inner carousel-img">
+                        <div class="carousel-item active">
+                            <img src="img/gallery-1.png" class="d-block w-100" alt="gallery-1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/gallery-2.png" class="d-block w-100" alt="gallery-2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/gallery-3.png" class="d-block w-100" alt="gallery-3">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <img src="img/prev-prev.png" alt="">
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <img src="img/next-prev.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- upcoming events -->
+        <div class="container-fluid container-upcoming">
+            <div class="container">
+                <div class="upcomingEvents text-center">
+                    <h2>UPCOMING <span id="releases">EVENTS</span></h2>
+                </div>
+
+                <div class="row upcoming-events">
+                    <div class="col-4">
+                        <img src="img/event-3.png" alt="">
+                    </div>
+                    <div class="col-1">
+                        <p>26 <br> / <br> 04 <br> / <br> 20</p>
+                    </div>
+                    <div class="col-5">
+                        <ul>
+                            <li>
+                                <h2>UNITED CENTER - CHICAGO</h2>
+                            </li>
+                            <li>
+                                <h3>@8: 00 PM</h3>
+                        </ul>
+
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit,
+                            sed do eiusmod tempor incididunt ut labore et <br> dolore magna
+                            aliqua.</p>
+                    </div>
+                    <div class="col-2">
+                        <button> DETAILS</button>
+                    </div>
+                </div>
+                <div class="row upcoming-events">
+                    <div class="col-4">
+                        <img src="img/event-2.png" alt="">
+                    </div>
+                    <div class="col-1">
+                        <p>26 <br> / <br> 04 <br> / <br> 20</p>
+                    </div>
+                    <div class="col-5">
+                        <ul>
+                            <li>
+                                <h2>UNITED CENTER - CHICAGO</h2>
+                            </li>
+                            <li>
+                                <h3>@8: 00 PM</h3>
+                        </ul>
+
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit,
+                            sed do eiusmod tempor incididunt ut labore et <br> dolore magna
+                            aliqua.</p>
+                    </div>
+                    <div class="col-2">
+                        <button> DETAILS</button>
+                    </div>
+                </div>
+                <div class="row upcoming-events">
+                    <div class="col-4">
+                        <img src="img/event-1.png" alt="">
+                    </div>
+                    <div class="col-1">
+                        <p>26 <br> / <br> 04 <br> / <br> 20</p>
+                    </div>
+                    <div class="col-5">
+                        <ul>
+                            <li>
+                                <h2>UNITED CENTER - CHICAGO</h2>
+                            </li>
+                            <li>
+                                <h3>@8: 00 PM</h3>
+                        </ul>
+
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit,
+                            sed do eiusmod tempor incididunt ut labore et <br> dolore magna
+                            aliqua.</p>
+                    </div>
+                    <div class="col-2">
+                        <button> DETAILS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- latest albums -->
+        <div class="container-fluid container-albums">
+            <div class="container">
+                <div class="latestAlbums text-center">
+                    <h2>LATEST <span id="releases">ALBUMS</span></h2>
+                </div>
+
+                <div class="row  card-albums text-center">
+                    <div class="col-4">
+                        <div id="card-img-album">
+                            <img src="img/album-4png.png" alt="">
+                            <p>YOU MEAN <br>
+                                NOTHING TO ME <br>
+                            </p>
+                            <p>
+                                <b>$19.9</b>
+                            </p>
+
+                            <button><img src="img/shoping-car.png" alt=""> <b>BUY</b></button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="card-img-album">
+                            <img src="img/album-4png.png" alt="">
+                            <p>YOU MEAN <br>
+                                NOTHING TO ME <br>
+                            </p>
+                            <p>
+                                <b>$19.9</b>
+                            </p>
+
+                            <button><img src="img/shoping-car.png" alt=""> <b>BUY</b></button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="card-img-album">
+                            <img src="img/album-4png.png" alt="">
+                            <p>YOU MEAN <br>
+                                NOTHING TO ME <br>
+                            </p>
+                            <p>
+                                <b>$19.9</b>
+                            </p>
+
+                            <button><img src="img/shoping-car.png" alt=""> <b>BUY</b></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" row botones">
+                    <div class="col-6">
+                        <button class="boton-prev"><img src="img/prev-prev.png" alt=""></button>
+                    </div>
+                    <div class="col-6">
+                        <button class="boton-next"><img src="img/next-prev.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- recente video -->
+
+        <div class="container-fluid container-video">
+            <div class="container">
+                <div class="recentVideo">
+                    <h2>RECENT <span id="releases">VIDEO</span></h2>
+                </div>
+
+                <video class="video-music" src="video/video.mp4" controls></video>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid container-footer">
+            <div class="container">
+                <h2>SUSCRIBE TO OUR NEWSLETTER</h2>
+
+                <form>
+                    <input id="name" type="text" placeholder="NAME" id="name" name="name">
+                    <input id="email" type="email" placeholder="EMAIL" id="email" name="email">
+                    <button type="button">SUSCRIBE NOW</button>
+                    <a href=""><button><img src="img/facebook.png" alt="facebook">Facebook</button></a>
+                    <a href=""><button><img src="img/youtube.png" alt="youtube">Youtube</button></a>
+                </form>
+                <p>©Copyright WorldSkills Cundi - 2020</p>
+            </div>
+        </div>
+    </footer>
+
 
 
 
@@ -89,6 +369,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="httts://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
