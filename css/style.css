@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; overflow-y: auto;
 }
 
 
@@ -195,7 +197,6 @@ main .img-store .col-4 h2 {
 main .img-store .col-4 h2 img {
     padding-bottom: 10px;
     opacity: 0;
-    transition: .3s;
 }
 
 main .img-store .col-4 .img-gradient-1:hover h2{
@@ -230,7 +231,7 @@ main .img-store p {
     top: 233px;
 }
 
-main button {
+main #seeall  {
     width: 231px;
     height: 50px;
     display: block;
@@ -317,10 +318,13 @@ main .col-3 .march-25 p {
 
 
 main .col-3 .march-25 button {
-    margin: 60px auto 30px auto;
+    margin: 60px auto 15px auto;
     height: 42px;
     width: 150px;
     font-size: 16px;
+    border-style: none;
+    background: #ffc401;
+    color: #fff;
     transition: .3s;
 }
 
@@ -478,6 +482,9 @@ main .upcoming-events .col-2 button {
     height: 40px;
     margin: 53% auto;
     font-size: 16px;
+    border-style: none;
+    background: #ffc401;
+    color: #fff;
 }
 
 
@@ -485,7 +492,7 @@ main .upcoming-events .col-2 button {
 main .container-albums {
     background-image: url(../img/albums.png);
     background-size: cover;
-    padding-bottom: 40px;
+    padding-bottom: 130px;
 }
 
 main .latestAlbums {
@@ -503,56 +510,86 @@ main .latestAlbums #releases {
     color: #ffc401;
 }
 
-main .card-albums {
-    color: #000;
+
+
+    /* botones de slick */
+main .card-albums .slick-prev {
+    background: #ffc40100;
+    background-image: url(../img/arrow-left.svg);
+    background-size: contain;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    position: absolute;
+    z-index: 100;
+    bottom: -100px;
+    left: 45%;
+    padding: 0;
+}
+
+main .card-albums .slick-next {
+    background: #ffc40100;
+    background-image: url(../img/arrow-right-short.svg);
+    background-size: contain;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    position: absolute;
+    z-index: 100;
+    bottom: -100px;
+    right: 45%;
 }
 
 main .card-albums .col-4 {
-    display: flex;
-  justify-content: center;
+    color: #000;
+    padding: 0;
 }
-main .card-albums .col-4 #card-img-album{
-    background: #fff;
+
+main .card-albums .col-4 .card-item {
     width: 226px;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    justify-content: center;
+    margin: 0 auto ;
 }
 
-main .card-albums .col-4 #card-img-album p {
-    margin-top: 8px;
-    margin-bottom: 0;
+main .card-albums .col-4 .card-item h2 {
     font-size: 15px;
-    font-weight: 500;
-    word-spacing: 1px;
-    line-height: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin: 0;
+    word-spacing: -1px;
+    width: 226px;
+    text-align: center;
 }
 
-main .card-albums .col-4 #card-img-album p b {
-    margin-top: px;
+main .card-albums .col-4 .card-item h3 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 6px;
+    width: 226px;
+    text-align: center;
 }
 
-main .card-albums .col-4 #card-img-album button {
-    height: 32px;
+main .card-albums .col-4 .button-cards {
+    color: #fff;
+    background:#ffc401;
+    border-style: none;
     width: 120px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 2px 0;
+    height: 32px;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+
+main .card-albums .col-4 .button-cards i {
+    margin-right: 10px;
+
 }
 
 
-main .botones {
-    padding-top: 40px;
-}
-main .botones .boton-prev {
-    background: none;
-    margin: 0 0 0 96%;
-    width: 40px;
-}
-
-main .botones .boton-next {
-    background: none;
-    margin: 0 90% 0 0;
-    width: 40px;
-}
 
 /* recent video */
 
@@ -651,3 +688,20 @@ main .container-video {
     color: #696969;
     font-weight: 600;
    }
+
+
+   /* tablet */
+
+@media screen and (max-width:768px) and (min-width: 501px){
+
+}
+    
+
+
+/* smartphone */
+
+@media screen and (max-width:500px) and (min-width: 320px){
+    
+
+
+}
