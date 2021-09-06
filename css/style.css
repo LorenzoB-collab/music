@@ -117,27 +117,118 @@ main .recenteReleases #releases {
 }
 
 main .img-store {
-    margin: 60px 0 0 0;
+    margin: 60px 0 0 0;   
 }
 
-main .img-store .col4 {
+main .img-store .col-4 {
     text-align: center;
+    max-width: 231px;
+   height: 231px;
+   padding: 0;
+}
+
+main .img-store .col-4 .img-gradient-1 {
+     background-image:  linear-gradient(
+      rgba(0,0, 0,0),
+     rgba(0,0, 0,0)
+    ), url(../img/album-1.png);
+    width: 231px;
+    height: 231px;
+    margin: 0 auto;
+}
+
+main .img-store .col-4 .img-gradient-2 {
+    background-image:  linear-gradient(
+        rgba(0,0, 0,0),
+        rgba(0,0, 0,0)
+   ), url(../img/album-2.png);
+   width: 231px;
+   height: 231px;
+   margin: 0 auto;
+}
+
+main .img-store .col-4 .img-gradient-3 {
+    background-image:  linear-gradient(
+     rgba(0,0, 0,0),
+     rgba(0,0, 0,0)
+   ), url(../img/album-3.png);
+   width: 231px;
+   height: 231px;
+   margin: 0 auto;
+}
+
+main .img-store .col-4 .img-gradient-1:hover {
+ background-image:  linear-gradient(
+      rgba(255, 197, 0, 0.50),
+      rgba(255, 197, 0, 0.50)
+    ), url(../img/album-1.png);
+}
+
+main .img-store .col-4 .img-gradient-2:hover {
+    background-image:  linear-gradient(
+         rgba(255, 197, 0, 0.50),
+         rgba(255, 197, 0, 0.50)
+       ), url(../img/album-2.png);
+   }
+
+main .img-store .col-4 .img-gradient-3:hover {
+ background-image:  linear-gradient(
+      rgba(255, 197, 0, 0.50),
+       rgba(255, 197, 0, 0.50)
+     ), url(../img/album-3.png);
+}   
+
+main .img-store .col-4 h2 {
+    position: absolute;
+    top: 80px;
+    color: rgba(0,  0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    left: 22%;
+}
+
+main .img-store .col-4 h2 img {
+    padding-bottom: 10px;
+    opacity: 0;
+}
+
+main .img-store .col-4 .img-gradient-1:hover h2{
+    color: #fff;
+} 
+
+main .img-store .col-4 .img-gradient-1:hover img{
+    opacity: 100%;
+}
+
+main .img-store .col-4 .img-gradient-2:hover h2{
+    color: #fff;
+} 
+
+main .img-store .col-4 .img-gradient-2:hover img{
+    opacity: 100%;
+}
+
+main .img-store .col-4 .img-gradient-3:hover h2{
+    color: #fff;
+} 
+
+main .img-store .col-4 .img-gradient-3:hover img{
+    opacity: 100%;
 }
 
 main .img-store p {
     font-weight: 300;
     color: #fff;
-    font-size: 15px;
-    padding-top: 5px;
-    text-align: left;
-    padding-left: 55px;
+    position: absolute;
+    margin: 0 auto;
+    top: 233px;
 }
 
 main button {
-    width: 278px;
-    height: 54px;
+    width: 231px;
+    height: 50px;
     display: block;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     border-style: none;
     background: #ffc401;
     color: #fff;
