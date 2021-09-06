@@ -125,6 +125,7 @@ main .img-store .col-4 {
     max-width: 231px;
    height: 231px;
    padding: 0;
+    transition: .3s;
 }
 
 main .img-store .col-4 .img-gradient-1 {
@@ -135,6 +136,7 @@ main .img-store .col-4 .img-gradient-1 {
     width: 231px;
     height: 231px;
     margin: 0 auto;
+    transition: .3s;
 }
 
 main .img-store .col-4 .img-gradient-2 {
@@ -145,6 +147,7 @@ main .img-store .col-4 .img-gradient-2 {
    width: 231px;
    height: 231px;
    margin: 0 auto;
+   transition: .3s;
 }
 
 main .img-store .col-4 .img-gradient-3 {
@@ -155,6 +158,7 @@ main .img-store .col-4 .img-gradient-3 {
    width: 231px;
    height: 231px;
    margin: 0 auto;
+   transition: .3s;
 }
 
 main .img-store .col-4 .img-gradient-1:hover {
@@ -185,11 +189,13 @@ main .img-store .col-4 h2 {
     font-size: 18px;
     font-weight: 500;
     left: 22%;
+    transition: .3s;
 }
 
 main .img-store .col-4 h2 img {
     padding-bottom: 10px;
     opacity: 0;
+    transition: .3s;
 }
 
 main .img-store .col-4 .img-gradient-1:hover h2{
