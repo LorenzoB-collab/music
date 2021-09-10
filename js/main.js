@@ -1,9 +1,6 @@
 $('.card-albums').slick({
-    dots: false,
     infinite: true,
-    autoplay: true,
-  autoplaySpeed: 2000,
-    speed: 700,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -13,7 +10,6 @@ $('.card-albums').slick({
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
         }
       },
       {
