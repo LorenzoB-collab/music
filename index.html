@@ -5,126 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusicBeat</title>
-    <link rel="shortcut icon" href="img/ico.png">
+    <title>Music Beat</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+
     <header>
-        <div class="header-box"></div>
+        <div class="header-gray"></div>
+
         <div class="container-fluid container-header">
-            <nav class="navbar navbar-expand-lg back-header">
-                <div class="container">
-                    <!-- logo -->
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="MUSICBEAT"></a>
-                    <!-- boton reponsive -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="bi bi-list text-white"></i>
-                    </button>
-                    <!-- menu -->
-                    <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
+            <div class="row cont-navbar-all">
+                <div class="col-2 cont-col2"></div>
+
+                <div class="col-8 cont-navbar">
+                    <!-- logo navbar -->
+                    <nav class="navbar navbar-background navbar-expand-lg">
+                        <a class="navbar-logo" href="index.html"><img src="img/logo.png" alt=""></a>
+
+                        <!-- button responsive -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- menu navbar -->
+                        <div class="collapse navbar-collapse cont-navbar-menu" id="navbarNavAltMarkup">
+                            <div class="navbar-nav menu-navbar">
+                                <a class="nav-link" href="#">HOME</a>
                                 <a class="nav-link" href="#">RELEASES</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">TOUR</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">GALLERY</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">EVENTS</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">ALBUMS</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container">
-                <div class="hero">
-                    <div class="row">
-                        <div class=" col-sm-12  col-md-12">
-                            <div class="text1">
-                                <h3>CHARLES <br>
-                                    JEMMINGTON //</h3>
-                                <h2>
-                                    <span id="playthe">PLAY THE</span> <br>
-                                    <span id="moments">MOMENTS</span>
-                                </h2>
-                                <button> <img src="img/shoping-car.png" alt=""> GET NEW ALBUM</button>
                             </div>
                         </div>
-    
-                        <div class=" col-sm-12  col-md-12 imgArtist">
-                            <img src="img/hero.png" alt="artist">
-                        </div>
-                    </div>
+                    </nav>
+                </div>
+
+                <div class="col-2 cont-col2"></div>
+            </div>
+
+            <!-- hero -->
+            <div class="row cont-hero">
+                <div class="col-5 cont-text-hero">
+                    <h1>CHARLES <br> JEMMINGTON //</h1>
+                    <h2 id="play-the">PLAY THE</h2>
+                    <h2 id="moments">MOMENTS</h2>
+                    <button id="button-hero"><img src="img/shoping-car.png" alt="">GET NEW ALBUM</button>
+                </div>
+                <div class="col-7 cont-img-hero">
+                    <img src="img/hero.png" alt="">
                 </div>
             </div>
-            
         </div>
     </header>
 
     <main>
 
-        <!-- Recent Releases -->
+        <!-- RECENT RELEASES -->
         <div class="container-fluid container-releases">
             <div class="container">
-                <div class="recenteReleases text-center">
-                    <h2>RECENT <span id="releases">RELEASES</span></h2>
+                <h2 id="recent-releases">RECENT <span> RELEASES</span></h2>
+
+                <div class="row justify-content-around">
+                    <div class="col-4 cont-card-album-1">
+                        <div class="img-gradient">
+                            <h2> <img src="img/shoping-car.png" alt=""> <br>
+                                NEW ALMBUM <br>
+                                ROCK BAND</h2>
+                        </div>
+                        <p>DATE: 2020/02/22</p>
+                    </div>
+
+                    <div class="col-4 cont-card-album-2">
+                        <div class="img-gradient">
+                            <h2> <img src="img/shoping-car.png" alt=""> <br>
+                                NEW ALMBUM <br>
+                                ROCK BAND</h2>
+                        </div>
+                        <p>DATE: 2020/02/22</p>
+                    </div>
+
+                    <div class="col-4 cont-card-album-3">
+                        <div class="img-gradient">
+                            <h2> <img src="img/shoping-car.png" alt=""> <br>
+                                NEW ALMBUM <br>
+                                ROCK BAND</h2>
+                        </div>
+                        <p>DATE: 2020/02/22</p>
+                    </div>
                 </div>
-                <div class="row  img-store justify-content-around">
-                    <div class="col-4">
-                        <div class="img-gradient-1">
-                            <h2> <img src="img/shoping-car.png" alt=""> <br>
-                                NEW ALMBUM <br>
-                                ROCK BAND</h2>
-                            <p>DATE: 2020/02/22</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="img-gradient-2">
-                            <h2> <img src="img/shoping-car.png" alt=""> <br>
-                                NEW ALMBUM <br>
-                                ROCK BAND</h2>
-                            <p>DATE: 2020/02/22</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="img-gradient-3">
-                            <h2> <img src="img/shoping-car.png" alt=""> <br>
-                                NEW ALMBUM <br>
-                                ROCK BAND</h2>
-                            <p>DATE: 2020/02/22</p>
-                        </div>
-                    </div>
-                </div>
-                <button id="seeall"> SEE ALL </button>
+
+                <button id="button-releases">SEE ALL</button>
             </div>
         </div>
 
-        <!-- tour schedule -->
+        <!-- TOUR SCHEDULE -->
         <div class="container-fluid container-schedule">
             <div class="container">
-                <div class="tourSchedule text-center">
-                    <h2>TOUR <span id="releases">SCHEDULE</span></h2>
-                </div>
+
+                <h2 id="tour-schedule">TOUR <span>SCHEDULE</span></h2>
 
                 <div class="row  card-schedule justify-content-around text-center">
-                    <div class="col-3">
+                    <div class="col-3 cont-tour-card">
                         <div class="march-25">
                             <h2>25 <br></h2>
                             <h3>MARCH - 2020</h3>
@@ -132,7 +121,7 @@
                             <button> BUY TICKETS</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 cont-tour-card">
                         <div class="march-25">
                             <h2>27 <br></h2>
                             <h3>MARCH - 2020</h3>
@@ -140,7 +129,7 @@
                             <button> BUY TICKETS</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 cont-tour-card">
                         <div class="march-25">
                             <h2>28 <br></h2>
                             <h3>MARCH - 2020</h3>
@@ -148,7 +137,7 @@
                             <button> BUY TICKETS</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 cont-tour-card">
                         <div class="march-25">
                             <h2>30 <br></h2>
                             <h3>MARCH - 2020</h3>
@@ -160,12 +149,11 @@
             </div>
         </div>
 
-        <!-- our gallery -->
+        <!-- OUR GALLERY -->
         <div class="container-fluid container-gallery">
             <div class="container">
-                <div class="ourGallery">
-                    <h2>OUR <span id="releases">GALLERY</span></h2>
-                </div>
+
+                <h2 id="our-gallery">OUR <span>GALLERY</span></h2>
 
                 <div id="carouselmusic" class="carousel slide carousel-gallery carousel-fade" data-ride="carousel">
                     <div class="carousel-inner carousel-img">
@@ -192,102 +180,69 @@
 
         </div>
 
-        <!-- upcoming events -->
-        <div class="container-fluid container-upcoming">
+        <!-- UPCOMING EVENTS -->
+        <div class="container-fluid container-events">
             <div class="container">
-                <div class="upcomingEvents text-center">
-                    <h2>UPCOMING <span id="releases">EVENTS</span></h2>
-                </div>
 
-                <div class="row upcoming-events">
-                    <div class="col-4">
-                        <img src="img/event-3.png" alt="">
+                <h2 id="upcoming-events">UPCOMING <span>EVENTS</span></h2>
+
+                <div class="row cont-info-events justify-content-center">
+                    <div class="col-3 cont-col-img"> <img src="img/event-3.png" alt="event-3"> </div>
+                    <div class="col-1 cont-col-date">
+                        <p> 26 <br> / <br> 04 <br> / <br> 20 </p>
                     </div>
-                    <div class="col-1">
-                        <p>26 <br> / <br> 04 <br> / <br> 20</p>
-                    </div>
-                    <div class="col-5">
-                        <ul>
-                            <li>
-                                <h2>UNITED CENTER - CHICAGO</h2>
-                            </li>
-                            <li>
-                                <h3>@8: 00 PM</h3>
-                        </ul>
-
-
+                    <div class="col-5 cont-col-info">
+                        <h2>UNITED CENTER - CHICAGO</h2>
+                        <h3>@ 8:00 PM</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit,
                             sed do eiusmod tempor incididunt ut labore et <br> dolore magna
                             aliqua.</p>
                     </div>
-                    <div class="col-2">
-                        <button> DETAILS</button>
-                    </div>
+                    <div class="col-3 cont-col-button"><button id="button-events">DETAILS</button></div>
                 </div>
-                <div class="row upcoming-events">
-                    <div class="col-4">
-                        <img src="img/event-2.png" alt="">
-                    </div>
-                    <div class="col-1">
-                        <p>26 <br> / <br> 04 <br> / <br> 20</p>
-                    </div>
-                    <div class="col-5">
-                        <ul>
-                            <li>
-                                <h2>UNITED CENTER - CHICAGO</h2>
-                            </li>
-                            <li>
-                                <h3>@8: 00 PM</h3>
-                        </ul>
 
-
+                <div class="row cont-info-events justify-content-center">
+                    <div class="col-3 cont-col-img"> <img src="img/event-2.png" alt="event-3"> </div>
+                    <div class="col-1 cont-col-date">
+                        <p> 26 <br> / <br> 04 <br> / <br> 20 </p>
+                    </div>
+                    <div class="col-5 cont-col-info">
+                        <h2>UNITED CENTER - CHICAGO</h2>
+                        <h3>@ 8:00 PM</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit,
                             sed do eiusmod tempor incididunt ut labore et <br> dolore magna
                             aliqua.</p>
                     </div>
-                    <div class="col-2">
-                        <button> DETAILS</button>
-                    </div>
+                    <div class="col-3 cont-col-button"><button id="button-events">DETAILS</button></div>
                 </div>
-                <div class="row upcoming-events">
-                    <div class="col-4">
-                        <img src="img/event-1.png" alt="">
-                    </div>
-                    <div class="col-1">
-                        <p>26 <br> / <br> 04 <br> / <br> 20</p>
-                    </div>
-                    <div class="col-5">
-                        <ul>
-                            <li>
-                                <h2>UNITED CENTER - CHICAGO</h2>
-                            </li>
-                            <li>
-                                <h3>@8: 00 PM</h3>
-                        </ul>
 
-
+                <div class="row cont-info-events justify-content-center">
+                    <div class="col-3 cont-col-img"> <img src="img/event-1.png" alt="event-3"> </div>
+                    <div class="col-1 cont-col-date">
+                        <p> 26 <br> / <br> 04 <br> / <br> 20 </p>
+                    </div>
+                    <div class="col-5 cont-col-info">
+                        <h2>UNITED CENTER - CHICAGO</h2>
+                        <h3>@ 8:00 PM</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit,
                             sed do eiusmod tempor incididunt ut labore et <br> dolore magna
                             aliqua.</p>
                     </div>
-                    <div class="col-2">
-                        <button> DETAILS</button>
-                    </div>
+                    <div class="col-3 cont-col-button"><button id="button-events">DETAILS</button></div>
                 </div>
             </div>
         </div>
 
-        <!-- latest albums -->
+        <!-- LATEST ALBUMS -->
         <div class="container-fluid container-albums">
             <div class="container">
-                <div class="latestAlbums text-center ">
-                    <h2>LATEST <span id="releases">ALBUMS</span></h2>
-                </div>
+
+                <h2 id="latest-albums">LATEST <span>ALBUMS</span></h2>
 
                 <!-- cards -->
                 <div class="row card-albums">
 
-                    <div class="col-4">
+                    <div class="col-4 cont-cards-albums">
                         <div class="card-item">
                             <img src="img/album-4png.png" alt="">
                             <h2>YOU MEAN <br>
@@ -299,7 +254,7 @@
                             <button class="button-cards"><i class="bi bi-cart3"></i>BUY</button>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 cont-cards-albums">
                         <div class="card-item">
                             <img src="img/album-4png.png" alt="">
                             <h2>YOU MEAN <br>
@@ -310,7 +265,8 @@
                             </h3>
                             <button class="button-cards"><i class="bi bi-cart3"></i>BUY</button>
                         </div>
-                    </div><div class="col-4">
+                    </div>
+                    <div class="col-4 cont-cards-albums">
                         <div class="card-item">
                             <img src="img/album-4png.png" alt="">
                             <h2>YOU MEAN <br>
@@ -321,7 +277,8 @@
                             </h3>
                             <button class="button-cards"><i class="bi bi-cart3"></i>BUY</button>
                         </div>
-                    </div><div class="col-4">
+                    </div>
+                    <div class="col-4 cont-cards-albums">
                         <div class="card-item">
                             <img src="img/album-4png.png" alt="">
                             <h2>YOU MEAN <br>
@@ -338,9 +295,7 @@
             </div>
         </div>
 
-
-        <!-- recente video -->
-
+        <!-- RECENT VIDEO -->
         <div class="container-fluid container-video">
             <div class="container">
                 <div class="recentVideo">
@@ -348,38 +303,35 @@
                 </div>
 
                 <div class="video-music">
-                    <iframe width="900" height="500" src="https://www.youtube.com/embed/rigubwkGxdw"
-                        title="YouTube video player" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/rigubwkGxdw" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <!-- <video class="video-music" src="video/video.mp4" controls></video> -->
             </div>
         </div>
-    </main>
 
+        <footer>
+            <div class="container-fluid container-footer">
+                <div class="container">
+                    <h2>SUSCRIBE TO OUR NEWSLETTER</h2>
 
-    <!-- footer -->
-    <footer>
-        <div class="container-fluid container-footer">
-            <div class="container">
-                <h2>SUSCRIBE TO OUR NEWSLETTER</h2>
-
-                <form>
-                    <input id="name" type="text" placeholder="NAME" id="name" name="name">
-                    <input id="email" type="email" placeholder="EMAIL" id="email" name="email">
-                    <button type="button">SUSCRIBE NOW</button>
-                    <a href="https://www.youtube.com/"><button><img src="img/facebook.png"
-                                alt="facebook">Facebook</button></a>
-                    <a href="https://www.facebook.com/"><button><img src="img/youtube.png"
-                                alt="youtube">Youtube</button></a>
-                </form>
-                <p>©Copyright WorldSkills Cundi - 2020</p>
+                    <form>
+                        <input id="name" type="text" placeholder="NAME" id="name" name="name">
+                        <input id="email" type="email" placeholder="EMAIL" id="email" name="email">
+                        <button type="button">SUSCRIBE NOW</button>
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/"><button><img src="img/facebook.png"
+                                        alt="facebook">Facebook</button></a>
+                            <a href="https://www.youtube.com/"><button><img src="img/youtube.png"
+                                        alt="youtube">Youtube</button></a>
+                        </div>
+                    </form>
+                    <p>©Copyright WorldSkills Cundi - 2020</p>
+                </div>
             </div>
-        </div>
-    </footer>
-
-
+        </footer>
+    </main>
 
 
     <!-- bootstrap -->
@@ -391,7 +343,7 @@
         crossorigin="anonymous"></script>
 
     <!-- slick -->
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
